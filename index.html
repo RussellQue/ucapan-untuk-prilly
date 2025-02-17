@@ -84,8 +84,8 @@
 </head>
 <body>
     <div class="greeting">
-        <h1>Selamat Pagi Sayangkuuu Cintakuuuu Cantikkuuuuuuuu</h1>
-        <p>alaavvvvvyyuuuuuuuuu💖</p>
+        <h1>Pagi Sygkuuu Cintakuuuu Cantikkuuu</h1>
+        <p>alaavvvvvyyuuuuuuuu💖</p>
     </div>
     <div class="bubbles"></div>
     <div class="wave"></div>
@@ -97,7 +97,8 @@
     </audio>
 
     <script>
-        const bubbleContainer = document.querySelector('.bubbles');
+        const particleContainer = document.querySelector('.particles');
+        const symbols = ['💖', '✨', '😘'];
         for (let i = 0; i < 30; i++) {
             let bubble = document.createElement('div');
             bubble.classList.add('bubble');
