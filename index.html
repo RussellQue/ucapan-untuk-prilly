@@ -100,12 +100,14 @@
         const particleContainer = document.querySelector('.particles');
         const symbols = ['💖', '✨', '😘'];
         for (let i = 0; i < 30; i++) {
-            let bubble = document.createElement('div');
-            bubble.classList.add('bubble');
-            bubble.style.left = Math.random() * 100 + 'vw';
-            bubble.style.animationDuration = (Math.random() * 3 + 3) + 's';
-            bubble.style.width = bubble.style.height = Math.random() * 20 + 10 + 'px';
-            bubbleContainer.appendChild(bubble);
+            for (let i = 0; i < 30; i++) {
+            let particle = document.createElement('div');
+            particle.classList.add('particle');
+            particle.textContent = symbols[Math.floor(Math.random() * symbols.length)];
+            particle.style.left = Math.random() * 100 + 'vw';
+            particle.style.animationDuration = (Math.random() * 3 + 3) + 's';
+            particle.style.fontSize = Math.random() * 20 + 10 + 'px';
+            particleContainer.appendChild(particle);
         }
 
         const music = document.getElementById('background-music');
